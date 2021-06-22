@@ -22,7 +22,7 @@ void Game::OnUpdate()
 	int dim_y = 512;
 	for (int y = 0; y < dim_y; y++)
 		for (int x = 0; x < dim_x; x++)
-			renderer->DrawColor(x, y, glm::vec4(1.0f));
+			renderer->DrawColor(x, y, glm::vec4(1.0f, 1.0f, 1.0f, (float)(x + y) / 1024));
 
 	//for (int i = 0; i < 1000; i++)
 	//	renderer->DrawColor(0 + i, 100, glm::vec4(1.0f));
